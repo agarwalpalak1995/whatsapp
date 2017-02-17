@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Productdetails" representedClassName="Productdetails" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Usermessages" inverseName="users" inverseEntity="Usermessages" syncable="YES"/>
+    </entity>
+    <entity name="Usermessages" representedClassName="Usermessages" syncable="YES" codeGenerationType="class">
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="users" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Productdetails" inverseName="messages" inverseEntity="Productdetails" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Usermessages" positionX="241" positionY="170" width="128" height="73"/>
+        <element name="Productdetails" positionX="-45" positionY="18" width="128" height="73"/>
+    </elements>
+</model>
