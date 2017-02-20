@@ -13,6 +13,7 @@ class ReceiverTableViewCell: UITableViewCell {
     @IBOutlet weak var lblreceiveTime: UILabel!
     @IBOutlet weak var lblReceivermessage: UILabel!
     
+    @IBOutlet weak var viewreceiver: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,6 +23,8 @@ class ReceiverTableViewCell: UITableViewCell {
         lblreceiveTime.text  = "\(hour):" + "\(minute)"
         
         // Initialization code
+        
+       viewreceiver.layer.cornerRadius = 10
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

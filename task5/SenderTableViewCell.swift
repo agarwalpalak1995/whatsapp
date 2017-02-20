@@ -13,6 +13,7 @@ class SenderTableViewCell: UITableViewCell {
     @IBOutlet weak var lblsendTime: UILabel!
     @IBOutlet weak var lblSender: UILabel!
     
+    @IBOutlet weak var viewsender: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,6 +22,8 @@ class SenderTableViewCell: UITableViewCell {
         let hour = Calendar.current.component(.hour, from: date )
         let minute = Calendar.current.component(.minute, from:  date)
         lblsendTime.text  = "\(hour):" + "\(minute)"
+       
+ viewsender.layer.cornerRadius = 10
         
     }
 

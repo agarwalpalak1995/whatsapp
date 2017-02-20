@@ -76,16 +76,16 @@ class ViewController: UIViewController , CNContactPickerDelegate
            productdetails(name: "ayushi", message: "Yesterday, 8:40 PM" , time: "" , amount: "", picturedata:URL(string: "https://s-media-cache-ak0.pinimg.com/originals/26/2c/06/262c06c76d0585b6a2a3917dec998644.jpg")) ,
            productdetails(name: "Anshika", message: "Yesterday, 7:50" , time: "" , amount: "" , picturedata:URL(string: "https://s-media-cache-ak0.pinimg.com/originals/41/b6/d0/41b6d0cac893197d9b05b19b397d72d8.jpg")) ,           ],
         [
-            productdetails(name: "Palak", message: "hey.. wass up?" , time: "5:45 AM" , amount: "5", picturedata:URL(string: "https://s-media-cache-ak0.pinimg.com/736x/6e/37/88/6e378883b61e3dd40a318666c4d410eb.jpg")) ,
-            productdetails(name: "Apurva", message: "hello" , time: "6:56 AM" , amount: "4" , picturedata:URL(string: "https://s-media-cache-ak0.pinimg.com/736x/81/74/f3/8174f37a0a4ffde668a466dca8ace7e8.jpg")) ,
+            productdetails(name: "Palak", message: "hey.. wass up?" , time: "5:45 AM" , amount: "5", picturedata:URL(string: "https://s-media-cache-ak0.pinimg.com/originals/26/2c/06/262c06c76d0585b6a2a3917dec998644.jpg")) ,
+            productdetails(name: "Apurva", message: "hello" , time: "6:56 AM" , amount: "4" , picturedata:URL(string: "https://s-media-cache-ak0.pinimg.com/originals/26/2c/06/262c06c76d0585b6a2a3917dec998644.jpg")) ,
             productdetails(name: "Divya", message: "heya" , time: "7:00 PM" , amount: "3" , picturedata:URL(string: "https://s-media-cache-ak0.pinimg.com/originals/26/2c/06/262c06c76d0585b6a2a3917dec998644.jpg")) ,
             productdetails(name: "Prachi", message: "hello" , time: "5:00 PM" , amount: "2", picturedata:URL(string: "https://s-media-cache-ak0.pinimg.com/originals/41/b6/d0/41b6d0cac893197d9b05b19b397d72d8.jpg")) ,
             productdetails(name: "Aditi", message: "hey" , time: "7:00 PM" , amount: "1" , picturedata:URL(string: "https://s-media-cache-ak0.pinimg.com/originals/41/b6/d0/41b6d0cac893197d9b05b19b397d72d8.jpg")) ,
             productdetails(name: "rashi", message: "hey.. wass up?" , time: "5:45 AM" , amount: "4", picturedata:URL(string: "https://s-media-cache-ak0.pinimg.com/736x/6e/37/88/6e378883b61e3dd40a318666c4d410eb.jpg")) ,
             productdetails(name: "prachi", message: "hello" , time: "6:56 AM" , amount: "7" , picturedata:URL(string: "https://s-media-cache-ak0.pinimg.com/736x/81/74/f3/8174f37a0a4ffde668a466dca8ace7e8.jpg")) ,
-           /* productdetails(name: "onam", message: "heya" , time: "7:00 PM" , amount: "5" , picturedata:URL(string: "https://s-media-cache-ak0.pinimg.com/originals/26/2c/06/262c06c76d0585b6a2a3917dec998644.jpg")) ,
+           productdetails(name: "onam", message: "heya" , time: "7:00 PM" , amount: "5" , picturedata:URL(string: "https://s-media-cache-ak0.pinimg.com/originals/26/2c/06/262c06c76d0585b6a2a3917dec998644.jpg")) ,
             productdetails(name: "divya", message: "hello" , time: "5:00 PM" , amount: "5", picturedata:URL(string: "https://s-media-cache-ak0.pinimg.com/originals/41/b6/d0/41b6d0cac893197d9b05b19b397d72d8.jpg")) ,
-            productdetails(name: "Aditi", message: "hey" , time: "7:00 PM" , amount: "5" , picturedata:URL(string: "https://s-media-cache-ak0.pinimg.com/originals/41/b6/d0/41b6d0cac893197d9b05b19b397d72d8.jpg")) ,*/
+            productdetails(name: "Aditi", message: "hey" , time: "7:00 PM" , amount: "5" , picturedata:URL(string: "https://s-media-cache-ak0.pinimg.com/originals/41/b6/d0/41b6d0cac893197d9b05b19b397d72d8.jpg")) ,
             ] 
         
         
@@ -100,7 +100,10 @@ class ViewController: UIViewController , CNContactPickerDelegate
     
     let scrolldata = ["CALLS" , "CHATS" , "CONTACTS"]
     
+    var options = ["New Group","New Broadcast","Whatsapp Web","Starred Msg","Status","Settings"]
     
+    
+    @IBOutlet weak var tblviewoption: UITableView!
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -129,6 +132,10 @@ class ViewController: UIViewController , CNContactPickerDelegate
     }
     */
  
+    @IBAction func btnoption(_ sender: UIButton)
+    {
+        tblviewoption.isHidden = false
+    }
     
     override func didReceiveMemoryWarning()
     {
@@ -141,21 +148,41 @@ class ViewController: UIViewController , CNContactPickerDelegate
            //////////MARK: - TableView Datasources/Delegates//////////////
    extension ViewController : UITableViewDelegate ,UITableViewDataSource
       {
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    {
+        tblviewoption.isHidden = true
+    }
+    
+    
        public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
         {
-        return arrProductDetails[selectedItem].count
+            var counts = 0
+            if(tableView == producttableView)
+            {
+                counts = arrProductDetails[selectedItem].count            }
+            else if(tableView == tblviewoption)
+            {
+                counts = options.count
+            }
+            
+        
+        return counts
         }
     
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         // let indexPath = tableView.indexPathForSelectedRow
         //let selectedCell = tableView.cellForRow(at: indexPath!) as! TableViewCell1
+        
+        
         profileimage = arrProductDetails[selectedItem][indexPath.row].picturedata!
         profilename = arrProductDetails[selectedItem][indexPath.row].name!
-        self.performSegue(withIdentifier: "SegueIdentifier", sender: self)
-         }
-    
-    override func prepare( for segue : UIStoryboardSegue, sender: Any?)
+       //performSegue(withIdentifier: "segueIdentifier", sender: self)
+         self.performSegue(withIdentifier: "SegueIdentifier", sender: self)
+        }
+           
+    override func prepare( for segue: UIStoryboardSegue, sender: Any?)
     {
         let DestViewController : secondViewController = segue.destination as! secondViewController
         DestViewController.namePass = profilename
@@ -165,6 +192,8 @@ class ViewController: UIViewController , CNContactPickerDelegate
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
+        if(tableView == producttableView)
+        {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? TableViewCell1
             else
         {
@@ -181,8 +210,21 @@ class ViewController: UIViewController , CNContactPickerDelegate
         cell.imgProduct.layer.borderColor = UIColor.white.cgColor
         return cell
     }
-   }
-
+    else if(tableView == tblviewoption)
+    {
+    let cell:TableViewCelloptions = tableView.dequeueReusableCell(withIdentifier:"option", for:indexPath) as! TableViewCelloptions
+    cell.lbloption.text = options[indexPath.row]
+    return cell
+    }
+    
+   
+    else
+        {
+        return UITableViewCell()
+    }
+    }
+    
+    }
 
 ////////////MARK: - ColletionView Datasources/Delegates/////////////////
 extension ViewController : UICollectionViewDataSource , UICollectionViewDelegate

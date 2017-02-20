@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D0874B71E582F560059BC7A /* TableViewCelloptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0874B61E582F560059BC7A /* TableViewCelloptions.swift */; };
+		1D0874BB1E5842630059BC7A /* labelclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0874BA1E5842630059BC7A /* labelclass.swift */; };
+		1D0874BD1E5845330059BC7A /* TableViewCellmenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0874BC1E5845330059BC7A /* TableViewCellmenu.swift */; };
 		1D0E03841E4983410060804E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0E03831E4983410060804E /* AppDelegate.swift */; };
 		1D0E03861E4983410060804E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0E03851E4983410060804E /* ViewController.swift */; };
 		1D0E03891E4983410060804E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D0E03871E4983410060804E /* Main.storyboard */; };
@@ -15,15 +18,19 @@
 		1D0E03961E4997250060804E /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0E03951E4997250060804E /* TableViewCell1.swift */; };
 		1D173CEC1E545AFC00398071 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D173CEB1E545AFC00398071 /* secondViewController.swift */; };
 		1D5355641E4AFA2D007156E7 /* selectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5355631E4AFA2D007156E7 /* selectCollectionViewCell.swift */; };
+		1D7FD5D91E59752F00A6080E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7FD5D81E59752F00A6080E /* CoreData.framework */; };
+		1D7FD5DB1E59753700A6080E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7FD5DA1E59753700A6080E /* CoreFoundation.framework */; };
 		1DB4F3241E4B3FD90084D3E0 /* productdetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB4F3231E4B3FD90084D3E0 /* productdetails.swift */; };
 		1DC65BEA1E52CDE40042CA7D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DC65BE81E52CDE40042CA7D /* Model.xcdatamodeld */; };
-		1DDB174D1E56E36E003DE6D1 /* databaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB174C1E56E36E003DE6D1 /* databaseController.swift */; };
 		1DEEF6521E556606002A639F /* ReceiverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEEF6511E556606002A639F /* ReceiverTableViewCell.swift */; };
 		1DEEF6541E5566AA002A639F /* SenderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEEF6531E5566AA002A639F /* SenderTableViewCell.swift */; };
 		207007F0214D6E023CC8B474 /* Pods_task5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FED3C64075DC70946321B4C /* Pods_task5.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D0874B61E582F560059BC7A /* TableViewCelloptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCelloptions.swift; sourceTree = "<group>"; };
+		1D0874BA1E5842630059BC7A /* labelclass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = labelclass.swift; sourceTree = "<group>"; };
+		1D0874BC1E5845330059BC7A /* TableViewCellmenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellmenu.swift; sourceTree = "<group>"; };
 		1D0E03801E4983410060804E /* task5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = task5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D0E03831E4983410060804E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D0E03851E4983410060804E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,9 +41,10 @@
 		1D0E03951E4997250060804E /* TableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
 		1D173CEB1E545AFC00398071 /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		1D5355631E4AFA2D007156E7 /* selectCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = selectCollectionViewCell.swift; sourceTree = "<group>"; };
+		1D7FD5D81E59752F00A6080E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1D7FD5DA1E59753700A6080E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		1DB4F3231E4B3FD90084D3E0 /* productdetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = productdetails.swift; sourceTree = "<group>"; };
 		1DC65BE91E52CDE40042CA7D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		1DDB174C1E56E36E003DE6D1 /* databaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = databaseController.swift; sourceTree = "<group>"; };
 		1DEEF6511E556606002A639F /* ReceiverTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiverTableViewCell.swift; sourceTree = "<group>"; };
 		1DEEF6531E5566AA002A639F /* SenderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderTableViewCell.swift; sourceTree = "<group>"; };
 		6C823C9D076E296421063790 /* Pods-task5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-task5.release.xcconfig"; path = "Pods/Target Support Files/Pods-task5/Pods-task5.release.xcconfig"; sourceTree = "<group>"; };
@@ -49,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7FD5DB1E59753700A6080E /* CoreFoundation.framework in Frameworks */,
+				1D7FD5D91E59752F00A6080E /* CoreData.framework in Frameworks */,
 				207007F0214D6E023CC8B474 /* Pods_task5.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,7 +99,9 @@
 				1D173CEB1E545AFC00398071 /* secondViewController.swift */,
 				1DEEF6511E556606002A639F /* ReceiverTableViewCell.swift */,
 				1DEEF6531E5566AA002A639F /* SenderTableViewCell.swift */,
-				1DDB174C1E56E36E003DE6D1 /* databaseController.swift */,
+				1D0874B61E582F560059BC7A /* TableViewCelloptions.swift */,
+				1D0874BA1E5842630059BC7A /* labelclass.swift */,
+				1D0874BC1E5845330059BC7A /* TableViewCellmenu.swift */,
 			);
 			path = task5;
 			sourceTree = "<group>";
@@ -106,6 +118,8 @@
 		F257FB497F150184F973E8A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1D7FD5DA1E59753700A6080E /* CoreFoundation.framework */,
+				1D7FD5D81E59752F00A6080E /* CoreData.framework */,
 				6FED3C64075DC70946321B4C /* Pods_task5.framework */,
 				1DC65BE81E52CDE40042CA7D /* Model.xcdatamodeld */,
 			);
@@ -236,14 +250,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D5355641E4AFA2D007156E7 /* selectCollectionViewCell.swift in Sources */,
+				1D0874BB1E5842630059BC7A /* labelclass.swift in Sources */,
 				1D173CEC1E545AFC00398071 /* secondViewController.swift in Sources */,
 				1D0E03961E4997250060804E /* TableViewCell1.swift in Sources */,
+				1D0874BD1E5845330059BC7A /* TableViewCellmenu.swift in Sources */,
 				1DEEF6541E5566AA002A639F /* SenderTableViewCell.swift in Sources */,
 				1DB4F3241E4B3FD90084D3E0 /* productdetails.swift in Sources */,
 				1D0E03861E4983410060804E /* ViewController.swift in Sources */,
+				1D0874B71E582F560059BC7A /* TableViewCelloptions.swift in Sources */,
 				1D0E03841E4983410060804E /* AppDelegate.swift in Sources */,
 				1DEEF6521E556606002A639F /* ReceiverTableViewCell.swift in Sources */,
-				1DDB174D1E56E36E003DE6D1 /* databaseController.swift in Sources */,
 				1DC65BEA1E52CDE40042CA7D /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,7 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = task5/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codebrew.task5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -381,7 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = task5/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codebrew.task5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
